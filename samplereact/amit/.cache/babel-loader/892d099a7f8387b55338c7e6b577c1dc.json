@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const ADD_COMMENT = 'ADD-COMMENT';","map":{"version":3,"sources":["C:/Users/ACER/Desktop/sample-react/samplereact/src/Redux/ActionTypes.js"],"names":["ADD_COMMENT"],"mappings":"AAAA,OAAO,MAAMA,WAAW,GAAG,aAApB","sourcesContent":["export const ADD_COMMENT = 'ADD-COMMENT';\r\n"]},"metadata":{},"sourceType":"module"}
