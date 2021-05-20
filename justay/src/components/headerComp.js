@@ -20,33 +20,32 @@ class Header extends Component {
 
     render() {
         return(
-            <div>
+            <React.Fragment>
                 <Navbar dark expand="md">
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav} />
-                        <NavbarBrand className="logo" href="/">
-                            <img src="../../public/images/justay.jpg" alt='justay' />
+                        <NavbarBrand className="mr-auto" href="/home">
+                            <img src="images/justay.jpg" height="50" width="110" alt='justay' />
                         </NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
-                            <NavItem>
+                            <NavItem style={{padding:"1em"}}>
                                 <NavLink className="nav-link"  to='/home'><span className="fa fa-home fa-lg"></span> Home</NavLink>
                             </NavItem>
-                            <NavItem>
+                            <NavItem style={{padding:"1em"}}>
                                 <NavLink className="nav-link" to='/aboutus'><span className="fa fa-info fa-lg"></span> About Us</NavLink>
                             </NavItem>
-                            <NavItem>
+                            <NavItem style={{padding:"1em"}}>
                                 <NavLink className="nav-link"  to='/menu'><span className="fa fa-list fa-lg"></span> Hostels</NavLink>
                             </NavItem>
-                            <NavItem>
+                            <NavItem style={{padding:"1em"}}>
                                 <NavLink className="nav-link" to='/contactus'><span className="fa fa-address-card fa-lg"></span> Contact Us</NavLink>
                             </NavItem>
                             </Nav>
                         </Collapse>
                     </div>
-                </Navbar>
-                
-            </div>
+                </Navbar> 
+            </React.Fragment>
         );
     }
 }

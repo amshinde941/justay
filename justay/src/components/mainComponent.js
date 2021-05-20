@@ -9,7 +9,7 @@ class Main extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div >
         <TransitionGroup>
             <Switch>
               <Route path="/home" component={Home} />
