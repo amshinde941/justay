@@ -3,7 +3,7 @@ import * as ActionTypes from './ActionTypes';
 export const Hostels = ( state = {
          isLoading:true,
          errmess:null,
-         hostel:[]
+         hostels:[]
     } , action ) => {
     switch (action.type) {
         case ActionTypes.ADD_HOSTELS:

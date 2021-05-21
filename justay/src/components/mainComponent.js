@@ -38,7 +38,7 @@ class Main extends Component {
 
     const HostelWithId = ({ match }) => {
       return (
-        <Hosteldetail selectedHostel={this.props.Hostels.dishes.filter((hostel) => hostel.id === parseInt(match.params.hostelId, 10))[0]}
+        <Hosteldetail selectedHostel={this.props.hostels.hostels.filter((hostel) => hostel.id === parseInt(match.params.hostelId, 10))[0]}
           isLoading={this.props.hostels.isLoading}
           errMess={this.props.hostels.errMess}
         />

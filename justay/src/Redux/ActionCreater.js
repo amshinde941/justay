@@ -35,9 +35,9 @@ export const hostelsFailed = (errmess) => ({
     payload: errmess
 });
 
-export const addHostels = (hostel) => ({
+export const addHostels = (hostels) => ({
     type: ActionTypes.ADD_HOSTELS,
-    payload: hostel
+    payload: hostels
 });
 
 
