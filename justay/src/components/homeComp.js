@@ -1,12 +1,10 @@
 import React, {Component} from 'react';
-import Header from './headerComp';
 import { Jumbotron,Button } from 'reactstrap';
 import './homeComp.css';
 class Home extends Component{
     render(){
         return(
             <div>
-                <Header/>
                 <Jumbotron>
                         <div className="row row-header">
                             <div className="col-12 col-sm-6">

@@ -1,0 +1,4 @@
+export const HOSTELS_LOADING = 'HOSTELS_LOADING';
+export const HOSTELS_FAILED = 'HOSTELS_FAILED';
+export const ADD_HOSTELS = 'ADD_HOSTELS';
+
