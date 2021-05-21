@@ -1,0 +1,16 @@
+.home-content{
+    background-color: #f0f8ff;
+    padding: 2em;
+}
+h1{
+    color: #000000;
+}
+h4{
+    padding: 0.5em;
+}
+.home-content img{
+    width: 5em;
+    height: 5em;
+    padding:1em;
+    margin-left: 3em;
+}
