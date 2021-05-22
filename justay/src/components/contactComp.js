@@ -30,7 +30,7 @@ class Contact extends Component {
                 <div className="row">
                     <Breadcrumb>
                         <BreadcrumbItem><Link to='/home'>Home</Link></BreadcrumbItem>
-                        <BreadcrumbItem active>Contact Us</BreadcrumbItem>
+                        <BreadcrumbItem active>Contactus</BreadcrumbItem>
                     </Breadcrumb>
                     <div className="col-12">
                         <h3>Contact Us</h3>
