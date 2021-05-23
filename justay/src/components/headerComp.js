@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem } from 'reactstrap';
+import { Nav, Navbar, NavbarBrand, Collapse, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import './headerComp.css';
+import {baseUrl} from './shared/baseUrl';
 class Header extends Component {
     constructor(props) {
         super(props);
@@ -19,13 +20,14 @@ class Header extends Component {
     }
 
     render() {
+
         return (
             <React.Fragment>
                 <Navbar dark expand="md">
                     <div className="container">
-                        <NavbarToggler onClick={this.toggleNav} style={{ color: "#f09103" }}/>
+                        <i className="fa fa-sliders fa-lg " style={{ padding: "1em" }} onClick={this.toggleNav}/>
                         <NavbarBrand className="mr-auto" href="/home">
-                            <img src="images/justay.jpg" height="50" width="110" alt='justay' />
+                            <img src={baseUrl + "images/justay.png"} height="50" width="110" alt='justay' />
                         </NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>

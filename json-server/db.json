@@ -5,14 +5,14 @@
       "name": "Uthappizza",
       "mainimage": "images/uthappizza.png",
       "images": [
-          {
-              "dish": "images/uthappizza.png",
-              "id":0
-          },
-          {
-              "dish": "images/uthappizza.png",
-              "id":1
-          }
+        {
+          "image": "images/uthappizza.png",
+          "iid": 0
+        },
+        {
+          "image": "images/uthappizza.png",
+          "iid": 1
+        }
       ],
       "category": "hostel",
       "label": "Hot",
@@ -26,14 +26,14 @@
       "name": "Uthappizza",
       "mainimage": "images/uthappizza.png",
       "images": [
-          {
-              "dish": "images/uthappizza.png",
-              "id":0
-          },
-          {
-              "dish": "images/uthappizza.png",
-              "id":1
-          }
+        {
+          "image": "images/uthappizza.png",
+          "iid": 0
+        },
+        {
+          "image": "images/uthappizza.png",
+          "iid": 1
+        }
       ],
       "category": "room",
       "label": "Hot",
@@ -47,14 +47,14 @@
       "name": "Uthappizza",
       "mainimage": "images/uthappizza.png",
       "images": [
-          {
-              "dish": "images/uthappizza.png",
-              "id":0
-          },
-          {
-              "dish": "images/uthappizza.png",
-              "id":1
-          }
+        {
+          "image": "images/uthappizza.png",
+          "iid": 0
+        },
+        {
+          "image": "images/uthappizza.png",
+          "iid": 1
+        }
       ],
       "category": "flat",
       "label": "Hot",
@@ -68,14 +68,14 @@
       "name": "Uthappizza",
       "mainimage": "images/uthappizza.png",
       "images": [
-          {
-              "dish": "images/uthappizza.png",
-              "id":0
-          },
-          {
-              "dish": "images/uthappizza.png",
-              "id":1
-          }
+        {
+          "image": "images/uthappizza.png",
+          "iid": 0
+        },
+        {
+          "image": "images/uthappizza.png",
+          "iid": 1
+        }
       ],
       "category": "pg",
       "label": "Hot",
@@ -89,14 +89,14 @@
       "name": "Uthappizza",
       "mainimage": "images/uthappizza.png",
       "images": [
-          {
-              "dish": "images/uthappizza.png",
-              "id":0
-          },
-          {
-              "dish": "images/uthappizza.png",
-              "id":1
-          }
+        {
+          "image": "images/uthappizza.png",
+          "iid": 0
+        },
+        {
+          "image": "images/uthappizza.png",
+          "iid": 1
+        }
       ],
       "category": "hostel",
       "label": "Hot",
@@ -110,19 +110,19 @@
       "name": "Uthappizza",
       "mainimage": "images/uthappizza.png",
       "images": [
-          {
-              "dish": "images/uthappizza.png",
-              "id":0
-          },
-          {
-              "dish": "images/uthappizza.png",
-              "id":1
-          }
+        {
+          "image": "images/uthappizza.png",
+          "iid": 0
+        },
+        {
+          "image": "images/uthappizza.png",
+          "iid": 1
+        }
       ],
       "category": "room",
       "label": "Hot",
       "price": 4.99,
-      "featured": true,
+      "featured": false,
       "address": "Pune Institute of Computer Technology, Dhanakawadi ,Pune-411043",
       "description": "A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer."
     }
@@ -149,6 +149,11 @@
       "message": "afadsfds",
       "date": "2017-12-04T09:41:49.890Z",
       "id": 1
+    }
+  ],
+  "other": [
+    {
+      "logo": "images/uthappizza.png"
     }
   ]
 }

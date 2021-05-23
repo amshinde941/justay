@@ -1,31 +1,28 @@
 import React from 'react';
 import {
-    Card, CardImg, CardText, CardBody, CardTitle, Breadcrumb, BreadcrumbItem} from 'reactstrap';
+    Card, CardImg, CardText, CardTitle, Breadcrumb, BreadcrumbItem
+} from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Loading } from './LoadingComponent';
 import { baseUrl } from './shared/baseUrl';
 
-function Renderhostel({ hostel }) {
-    if (hostel != null) {
-        return (
-            <div>
-                    <Card key={hostel.id}>
-                        <CardImg width="100%" src={baseUrl + hostel.mainimage} alt={hostel.name} />
-                        <CardBody>
-                            <CardTitle>{hostel.name}</CardTitle>
-                            <CardText>{hostel.description}</CardText>
-                        </CardBody>
-                    </Card>
-            </div>
-        );
-    } else {
-        return (
-            <div></div>
-        );
-    }
+function RenderImages({ image }) {
+    return (
+        <Card key={image.iid}>
+            <CardImg width="100%" src={baseUrl + image.image} alt="hostel-images" />
+        </Card>
+    )
 }
 
 const Hosteldetail = (props) => {
+    const Images = props.selectedHostel.images.map((image) => {
+        return (
+            <div className="col-5 col-md-3 m-1">
+                <RenderImages image={image} />
+            </div>
+        );
+    })
+
     if (props.isLoading) {
         return (
             <div className="container">
@@ -46,8 +43,8 @@ const Hosteldetail = (props) => {
     }
     else if (props.selectedHostel != null) {
         return (
-            <div className="container">
-                <div className="row">
+            <div className="container ">
+                <div className="row justify-content-center">
                     <Breadcrumb>
                         <BreadcrumbItem><Link to='/hostel'>Hostel</Link></BreadcrumbItem>
                         <BreadcrumbItem active>{props.selectedHostel.name}</BreadcrumbItem>
@@ -56,9 +53,16 @@ const Hosteldetail = (props) => {
                         <h3>Hostel</h3>
                         <hr />
                     </div>
-                    <div className="col-12 col-md-5 m-1">
-                        <Renderhostel hostel={props.selectedHostel} />
-                    </div>
+                    {Images}
+                </div>
+                <div className="row col-12" style={{ padding: "1em",marginBottom:"2em"}}>
+                    <Card style={{ padding: "1em",backgroundColor: "#f0f8ff " }}>
+                        <CardTitle><h3>Name : {props.selectedHostel.name} </h3></CardTitle>
+                        <CardText><h3>Category : {props.selectedHostel.category}</h3></CardText>
+                        <CardText><h3>Address : {props.selectedHostel.address}</h3></CardText>
+                        <CardText><h3>Price : {props.selectedHostel.price} </h3></CardText>
+                        <CardText><h5>{props.selectedHostel.description}</h5></CardText>
+                    </Card>
                 </div>
             </div>
         );

@@ -20,7 +20,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = (dispatch) => ({
   postFeedback:(feedback) =>dispatch(postFeedback(feedback)),
   fetchHostels: () => { dispatch(fetchHostels()) },
-  resetFeedbackForm: () => { dispatch(actions.reset('feedback')) },
+  resetFeedbackForm: () => { dispatch(actions.reset('feedback')) }
 })
 
 class Main extends Component {
