@@ -45,45 +45,22 @@ class Contact extends Component {
                     <div className="col-12 col-md-9">
                         <Form model="feedback" onSubmit={(values) => this.handleSubmit(values)}>
                             <Row className="form-group" style={{padding:"1em"}}>
-                                <Label htmlfor="firstname" md={2}>First Name</Label>
+                                <Label htmlfor="email" md={2}>Email</Label>
                                 <Col md={10}>
-                                    <Control.text model=".firstname" id="firstname" name="firstname"
-                                        placeholder="First Name"
+                                    <Control.text model=".email" id="email" name="email"
+                                        placeholder="Email"
                                         className="form-control"
                                         validators={{
-                                            required, minLength: minLength(3), maxLength: maxLength(10)
+                                            required, validEmail
                                         }}
                                     />
                                     <Errors
                                         className="text-danger"
-                                        model=".firstname"
+                                        model=".email"
                                         show="touched"
                                         messages={{
                                             required: 'Required',
-                                            minLength: 'Must be greater than 2 char',
-                                            maxLength: 'must be less than 10 char'
-                                        }}
-                                    />
-                                </Col>
-                            </Row>
-                            <Row className="form-group"style={{padding:"1em"}}>
-                                <Label htmlfor="lastname" md={2}>Last Name</Label>
-                                <Col md={10}>
-                                    <Control.text model=".lastname" id="lastname" name="lastname"
-                                        placeholder="Last Name"
-                                        className="form-control"
-                                        validators={{
-                                            required, minLength: minLength(3), maxLength: maxLength(10)
-                                        }}
-                                    />
-                                    <Errors
-                                        className="text-danger"
-                                        model=".lastname"
-                                        show="touched"
-                                        messages={{
-                                            required: 'Required',
-                                            minLength: 'Must be greater than 2 char',
-                                            maxLength: 'must be less than 10 char'
+                                            validEmail: 'Invalid Email Address'
                                         }}
                                     />
                                 </Col>
@@ -111,27 +88,7 @@ class Contact extends Component {
                                     />
                                 </Col>
                             </Row>
-                            <Row className="form-group" style={{padding:"1em"}}>
-                                <Label htmlfor="email" md={2}>Email</Label>
-                                <Col md={10}>
-                                    <Control.text model=".email" id="email" name="email"
-                                        placeholder="Email"
-                                        className="form-control"
-                                        validators={{
-                                            required, validEmail
-                                        }}
-                                    />
-                                    <Errors
-                                        className="text-danger"
-                                        model=".email"
-                                        show="touched"
-                                        messages={{
-                                            required: 'Required',
-                                            validEmail: 'Invalid Email Address'
-                                        }}
-                                    />
-                                </Col>
-                            </Row>
+                            
                             <Row className="form-group" style={{padding:"1em"}}>
                                 <Col md={{ size: 6, offset: 2 }}>
                                     <div className="form-check">
@@ -154,7 +111,7 @@ class Contact extends Component {
                                 <Label htmlfor="message" md={2}>Your Feedback</Label>
                                 <Col md={10}>
                                     <Control.textarea model=".message" id="message" name="message"
-                                        rows="12"
+                                        rows="2"
                                         className="form-control" />
                                 </Col>
                             </Row>

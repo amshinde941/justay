@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    Card, CardImg, CardText, CardTitle, Breadcrumb, BreadcrumbItem
+    Card, CardImg, CardText, Breadcrumb, BreadcrumbItem
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Loading } from './LoadingComponent';
@@ -50,14 +50,13 @@ const Hosteldetail = (props) => {
                         <BreadcrumbItem active>{props.selectedHostel.name}</BreadcrumbItem>
                     </Breadcrumb>
                     <div className="col-12">
-                        <h3>Hostel</h3>
+                        <h3>{props.selectedHostel.name}</h3>
                         <hr />
                     </div>
                     {Images}
                 </div>
                 <div className="row col-12" style={{ padding: "1em",marginBottom:"2em"}}>
                     <Card style={{ padding: "1em",backgroundColor: "#f0f8ff " }}>
-                        <CardTitle><h3>Name : {props.selectedHostel.name} </h3></CardTitle>
                         <CardText><h3>Category : {props.selectedHostel.category}</h3></CardText>
                         <CardText><h3>Address : {props.selectedHostel.address}</h3></CardText>
                         <CardText><h3>Price : {props.selectedHostel.price} </h3></CardText>
