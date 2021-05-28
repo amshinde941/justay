@@ -28,7 +28,7 @@ class Home extends Component {
                     <h4>we will find one for you</h4><br />
                     <div className="row">
                         <h3>Owners can mail their hostel info here 	&rarr;
-                        <a role="button" className="btn btn-success" style={{ width: "10%",backgroundColor:"#e739df" }} href="mailto:justay@gmail.com"><i className="fa fa-envelope-o"></i> Email</a>
+                        <a role="button" className="btn btn-success" style={{ width: "5em",backgroundColor:"#e739df",display:"inline"}} href="mailto:justay@gmail.com"><i className="fa fa-envelope-o"></i> Email</a>
                         </h3>
                         <div className="copyright" style={{paddingTop:"1em"}}>
                             &copy; Designed & Developed by justay web team

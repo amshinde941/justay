@@ -23,7 +23,7 @@
     },
     {
       "id": 1,
-      "name": "Uthappizza",
+      "name": "hostel1",
       "mainimage": "images/uthappizza.png",
       "images": [
         {
@@ -44,7 +44,7 @@
     },
     {
       "id": 2,
-      "name": "Uthappizza",
+      "name": "hostel2",
       "mainimage": "images/uthappizza.png",
       "images": [
         {

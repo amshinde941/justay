@@ -10,7 +10,7 @@ function RenderMenuItem({ hostel }) {
                 <Link to={`/hostel/${hostel.id}`}>
                     <CardImg width="100%" src={baseUrl + hostel.mainimage} alt={hostel.name} />
                     <CardImgOverlay>
-                        <CardTitle>{hostel.name}</CardTitle>
+                        <CardTitle style={{color:"#e739df",backgroundColor:"#f0f8ff"}}>{hostel.name}</CardTitle>
                     </CardImgOverlay>
                     <CardText>{hostel.category}</CardText>
                     <CardText>{hostel.address}</CardText>
